@@ -12,7 +12,8 @@ typedef struct Node {
   struct Node *next; /* 指针域，指向下一个结点 */
 } Node;
 
-Status ListInsert(Node *L, int i, ElemType e) {
+Status ListInsert(Node *L, int i, ElemType e) 
+{
   Node *p = L; /* p指向头结点 */
   int j = 1;   /* 计数器 */
 

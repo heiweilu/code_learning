@@ -11,7 +11,8 @@ typedef struct Node {
   struct Node *next; /* 指针域，指向下一个结点 */
 } Node;
 
-Status GetElem(Node *L, int i, ElemType *e) {
+Status GetElem(Node *L, int i, ElemType *e) 
+{
   int j = 1;         /* 计数器 */
   Node *p = L->next; /* p指向头结点的下一个结点 */
 

@@ -12,7 +12,8 @@ typedef struct {
   int length;             /* 当前顺序表长度 */
 } SqList;
 
-Status ListInsert(SqList *L, int i, ElemType e) {
+Status ListInsert(SqList *L, int i, ElemType e) 
+{
   if (L->length == MAXSIZE) /* 顺序表已满 */
     return ERROR;
 
@@ -30,7 +31,8 @@ Status ListInsert(SqList *L, int i, ElemType e) {
   return OK; /* 返回成功状态 */
 }
 
-int main(void) {
+int main(void) 
+{
   SqList L = {{1, 2, 3, 4, 5}, 5}; /* 初始化顺序表 */
   ElemType newElement = 10;        /* 要插入的新元素 */
   int pos = 3;                     /* 要插入的位置 */

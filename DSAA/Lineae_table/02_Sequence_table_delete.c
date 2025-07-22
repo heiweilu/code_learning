@@ -12,7 +12,8 @@ typedef struct {
   int length;             /* 当前顺序表长度 */
 } SqList;                 /* 顺序表类型 */
 
-Status ListDelete(SqList *L, int i, ElemType *e) {
+Status ListDelete(SqList *L, int i, ElemType *e) 
+{
   /* 1.错误判断 */
   if (L->length == 0) /* 顺序表为空 */
     return ERROR;
@@ -35,7 +36,8 @@ Status ListDelete(SqList *L, int i, ElemType *e) {
   /* 5. 返回成功状态 */
   return OK; /* 返回成功状态 */
 }
-int main(void) {
+int main(void) 
+{
 
   SqList L = {{1, 2, 3, 4, 5}, 5}; /* 初始化顺序表 */
   int deleted;
