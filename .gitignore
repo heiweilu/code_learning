@@ -2,3 +2,4 @@
 *.exe
 *.json
 demo.c
+.clang-format
